@@ -32,7 +32,7 @@ public class AnagramManager {
         for (String word : input.split(" ")) {
             output = String.join(" ", output, reverseWord(word.toCharArray(), ignoreSet));
         }
-        return output;
+        return output.trim();
     }
 
     private String reverseWord(char[] input, Set<Character> ignore) {
